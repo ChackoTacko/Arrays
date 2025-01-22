@@ -15,6 +15,21 @@ class Solution {
 
        return false;
     }
+
+    alternateSolution(nums) {
+        // O(logN)
+        nums.sort((a,b) => a - b);
+        
+        // O(N) 
+        for(let i = 0; i < nums.length - 1; i++) {
+            // O(1)
+            if (nums[i] === nums[i+1]) {
+                return true
+            }
+        }
+
+        return false
+    } 
   }
   
   const testCases = [
@@ -28,4 +43,4 @@ class Solution {
 
 const testFunction = new Solution();
 
-runTestCases(testFunction.containsDuplicate, testCases)
+runTestCases(testFunction.alternateSolution, testCases)
