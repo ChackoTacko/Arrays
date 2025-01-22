@@ -1,6 +1,7 @@
 const { runTestCases } = require('../Test-Case-Functions')  
 
 class Solution {
+    // Time Comlexity is O(N) where N is the length of the array because it must traverse through the entire array 1 time in order to calculate the running sum
     runningSum(nums) {
         const result = new Array(nums.length);
         // TODO: Write your code here
