@@ -1,6 +1,7 @@
 const { runTestCases } = require('../Test-Case-Functions')  
 
 class Solution {
+    //O(N)
     difference(nums) {
         const n = nums.length;
         const differenceArray = new Array(n).fill(0);

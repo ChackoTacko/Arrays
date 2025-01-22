@@ -1,6 +1,7 @@
 const { runTestCases } = require('../Test-Case-Functions')  
 
 class Solution {
+    // O(N)
     maxAltitude(gain) {
         let currentAtitude = 0;
         let maxAltitude = 0;
